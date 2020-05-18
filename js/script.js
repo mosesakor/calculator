@@ -63,7 +63,9 @@ function hasOperator() {
 
 function setOperator() {
 
-    if (operand1 === '') {
+    if (operand1 === '' && event.target.textContent === '-') {
+        operand1 += '-';
+        textDisplay.textContent = operand1;
         return;
     }
 
