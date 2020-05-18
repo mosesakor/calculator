@@ -122,6 +122,11 @@ function addDecimal() {
             console.log(operand2)
         }
     }
+    else if (currentInput.includes('.') && theOperator !== '' && !operand2.includes('.')) {
+        operand2 += event.target.textContent;
+        textDisplay.textContent += event.target.textContent;
+        console.log(operand2);
+    }
 
 }
 
