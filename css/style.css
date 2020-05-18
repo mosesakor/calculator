@@ -38,6 +38,7 @@ p {
 }
 
 .buttons {
+    user-select: none;
     color: white;
     font-weight: bold;
     height: 27rem;
